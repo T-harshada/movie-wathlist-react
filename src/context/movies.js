@@ -8,8 +8,7 @@ const MovieProvider = ({ children }) => {
   const [loading, setLoading] = useState(false)
 
   const addOrRemoveLikedMovie = (movie) => {
-    console.log("movie",movie)
-    debugger
+    
     // check if  movie is previously not added, liked else disliked
     const foundMovie = likedMovies.find(obj => obj.id === movie.id) 
     if(likedMovies.length === 0) {

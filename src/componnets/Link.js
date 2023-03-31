@@ -3,7 +3,7 @@ import classNames from 'classnames'
 
 import NavigationContext from "../context/navigation";
 
-const Link = ({to, children, className, activeClassName}) => {
+const Link = ({to, children, className}) => {
   const { navigateTo } = useContext(NavigationContext)
   const classes =  classNames(
     'text-blue-500',

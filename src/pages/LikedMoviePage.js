@@ -4,9 +4,6 @@ import MovieContext from '../context/movies'
 
 const LikedMoviePage = () => {
   const { likedMovies } =  useContext(MovieContext)
-  useEffect(() => {
-    console.log(likedMovies)
-  },[likedMovies])
   console.log(likedMovies)
   const renderedList = likedMovies.map(movie => {
     return (
